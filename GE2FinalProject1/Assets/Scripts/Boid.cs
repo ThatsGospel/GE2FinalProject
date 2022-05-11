@@ -53,6 +53,10 @@ public class Boid : MonoBehaviour
         Vector3 toTarget = target - transform.position;
 
         float distance = toTarget.magnitude;
+        if(distance == 0)
+        {
+            return Vector3.zero;
+        }
         Vector3 desired;
         if (distance < slowingDistance)
         {

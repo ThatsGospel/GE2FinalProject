@@ -107,6 +107,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.23f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -303,6 +304,8 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.23f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 -r:"C:/Users/Admin/Documents/GitHub/GE2FinalProject/GE2FinalProject/GE2FinalProject1/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.ref.dll"
@@ -313,11 +316,13 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Arrive.cs"
+"Assets/Scripts/AudioQueue.cs"
 "Assets/Scripts/BigBoid.cs"
 "Assets/Scripts/Boid.cs"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/Fighter.cs"
 "Assets/Scripts/Flee.cs"
+"Assets/Scripts/FollowCamera.cs"
 "Assets/Scripts/FollowPath.cs"
 "Assets/Scripts/Harmonic.cs"
 "Assets/Scripts/JitterWander.cs"
@@ -328,6 +333,7 @@
 "Assets/Scripts/PredatorController.cs"
 "Assets/Scripts/PreyController.cs"
 "Assets/Scripts/Pursue.cs"
+"Assets/Scripts/RayGun.cs"
 "Assets/Scripts/RotateMe.cs"
 "Assets/Scripts/Seek.cs"
 "Assets/Scripts/Spawner.cs"
@@ -336,6 +342,13 @@
 "Assets/Scripts/StateMachine.cs"
 "Assets/Scripts/States.cs"
 "Assets/Scripts/SteeringBehaviour.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/CannonBehavior.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/CreateSinShapedLineStrip.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/ShotBehavior.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/VolumetricMultiLineBehavior.cs"
+"Assets/VolumetricLines/Scripts/VolumetricLineBehavior.cs"
+"Assets/VolumetricLines/Scripts/VolumetricLineStripBehavior.cs"
+"Assets/VolumetricLines/Scripts/VolumetricLineVertexData.cs"
 -langversion:8.0
 
 /deterministic
