@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 1735275432863229796}
   - component: {fileID: 1735275432863229799}
   - component: {fileID: 1322074544447325669}
+  - component: {fileID: 9070449877289079843}
   m_Layer: 0
   m_Name: BattleStar
   m_TagString: BattleStar
@@ -120,9 +121,13 @@ MonoBehaviour:
   - NextGen
   - StarWars
   currentEnemyTarget: {fileID: 0}
-  puruseDistance: 0
-  attackDistance: 0
+  puruseDistance: 125
+  attackDistance: 100
   fleeSpeedMultiplier: 1.5
+  shootRate: 3
+  m_shotPrefab: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+  target: {fileID: 0}
+  muzzle: {fileID: 1735275432670397763}
   enemiesTargeting: []
 --- !u!114 &1735275432863229797
 MonoBehaviour:
@@ -203,6 +208,19 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!65 &9070449877289079843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735275432863229798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.63775635, y: 0.3587036, z: 1.2105103}
+  m_Center: {x: -0.014678955, y: -0.022033691, z: -0.10525513}
 --- !u!1001 &1735275432729598914
 PrefabInstance:
   m_ObjectHideFlags: 0

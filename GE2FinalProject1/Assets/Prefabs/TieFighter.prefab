@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: 400768296472222286}
   - component: {fileID: 400768296472222287}
   - component: {fileID: 400768296472222276}
+  - component: {fileID: 5614153695906462190}
   m_Layer: 0
   m_Name: TieFighter
   m_TagString: StarWars
@@ -124,6 +125,10 @@ MonoBehaviour:
   puruseDistance: 125
   attackDistance: 100
   fleeSpeedMultiplier: 1.5
+  shootRate: 3
+  m_shotPrefab: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+  target: {fileID: 0}
+  muzzle: {fileID: 400768294815478268}
   enemiesTargeting: []
 --- !u!114 &400768296472222280
 MonoBehaviour:
@@ -219,6 +224,19 @@ MonoBehaviour:
   maxHealth: 0
   health: 0
   healingRate: 0
+--- !u!65 &5614153695906462190
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400768296472222285}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.7178345, y: 6.21894, z: 6.9480553}
+  m_Center: {x: -0.05758667, y: 0.11512327, z: -0.01918602}
 --- !u!1 &670677309160427721
 GameObject:
   m_ObjectHideFlags: 0

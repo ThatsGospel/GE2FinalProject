@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1532099024535046370}
   - component: {fileID: 1532099024535046371}
   - component: {fileID: 1532099024535046368}
+  - component: {fileID: 4420623328576185690}
   m_Layer: 0
   m_Name: NextGenShuttle
   m_TagString: NextGen
@@ -74,9 +75,13 @@ MonoBehaviour:
   - BattleStar
   - StarWars
   currentEnemyTarget: {fileID: 0}
-  puruseDistance: 100
-  attackDistance: 0
+  puruseDistance: 125
+  attackDistance: 100
   fleeSpeedMultiplier: 1.5
+  shootRate: 3
+  m_shotPrefab: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+  target: {fileID: 0}
+  muzzle: {fileID: 1532099024849008780}
   enemiesTargeting: []
 --- !u!114 &1532099024535046373
 MonoBehaviour:
@@ -157,6 +162,19 @@ MonoBehaviour:
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   target: {fileID: 0}
+--- !u!65 &4420623328576185690
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532099024535046369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0046997, y: 1.3473053, z: 3.0590515}
+  m_Center: {x: 0.0061950684, y: 0.8186569, z: -0.037216187}
 --- !u!1 &1532099024849008781
 GameObject:
   m_ObjectHideFlags: 0

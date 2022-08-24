@@ -360,6 +360,7 @@ GameObject:
   - component: {fileID: 4579308772387020628}
   - component: {fileID: 4579308772387020631}
   - component: {fileID: 4579308772387020630}
+  - component: {fileID: 3434610725683404782}
   m_Layer: 0
   m_Name: Enterprise
   m_TagString: NextGen
@@ -419,9 +420,13 @@ MonoBehaviour:
   - BattleStar
   - StarWars
   currentEnemyTarget: {fileID: 0}
-  puruseDistance: 0
-  attackDistance: 0
+  puruseDistance: 125
+  attackDistance: 100
   fleeSpeedMultiplier: 1.5
+  shootRate: 3
+  m_shotPrefab: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+  target: {fileID: 0}
+  muzzle: {fileID: 4579308771646924389}
   enemiesTargeting: []
 --- !u!114 &4579308772387020626
 MonoBehaviour:
@@ -517,6 +522,19 @@ MonoBehaviour:
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   target: {fileID: 0}
+--- !u!65 &3434610725683404782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579308772387020616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.1405983, y: 2.0004578, z: 9.969421}
+  m_Center: {x: -0.034498215, y: 0.086242676, z: 0.069000244}
 --- !u!1 &5821042912825226055
 GameObject:
   m_ObjectHideFlags: 0

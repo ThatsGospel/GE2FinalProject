@@ -295,6 +295,7 @@ GameObject:
   - component: {fileID: 9147160987812996488}
   - component: {fileID: 5252164911391601559}
   - component: {fileID: 4101159732526378664}
+  - component: {fileID: 4080952243985734061}
   m_Layer: 0
   m_Name: MilleniumFalcon
   m_TagString: StarWars
@@ -354,9 +355,13 @@ MonoBehaviour:
   - NextGen
   - BattleStar
   currentEnemyTarget: {fileID: 0}
-  puruseDistance: 0
-  attackDistance: 0
+  puruseDistance: 125
+  attackDistance: 100
   fleeSpeedMultiplier: 1.5
+  shootRate: 3
+  m_shotPrefab: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+  target: {fileID: 0}
+  muzzle: {fileID: 2664042148809457568}
   enemiesTargeting: []
 --- !u!114 &5739615322875365244
 MonoBehaviour:
@@ -452,6 +457,19 @@ MonoBehaviour:
   boid: {fileID: 0}
   targetGameObject: {fileID: 0}
   target: {x: 0, y: 0, z: 0}
+--- !u!65 &4080952243985734061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782646292047346999}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 29.042953, y: 5.006138, z: 39.132446}
+  m_Center: {x: 1.1128159, y: 0.22256279, z: 5.564087}
 --- !u!1 &4709076012180412864
 GameObject:
   m_ObjectHideFlags: 0

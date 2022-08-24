@@ -25,6 +25,15 @@ public class BoidStateController : MonoBehaviour
     private float fleeSpeed;
     private float originalMaxSpeed;
 
+
+    public float shootRate;
+    private float m_shootRateTimeStamp;
+
+    public GameObject m_shotPrefab;
+    public Transform target;
+    RaycastHit hit;
+    public Transform muzzle;
+
     public List<GameObject> enemiesTargeting = new List<GameObject>();
 
     private void Start()
@@ -112,6 +121,14 @@ case BoidStates.Flee:
                     currentState = BoidStates.Wander;
                 }
 
+
+                if (Vector3.Distance(transform.position, currentEnemyTarget.transform.position) < attackDistance)
+                {
+                    
+                    GetComponent<Boid>().maxSpeed = originalMaxSpeed;
+                    currentState = BoidStates.Attack;
+                }
+
                 if (enemiesTargeting.Count >= 2)
                 {
                     currentState = BoidStates.Flee;
@@ -121,9 +138,40 @@ case BoidStates.Flee:
 
                 break;
             case BoidStates.Attack:
+                noiseWander.enabled = false;
+                pursue.enabled = true;
+                flee.enabled = false;
+
+
+                if (Time.time > m_shootRateTimeStamp)
+                {
+                    shootRay();
+                    m_shootRateTimeStamp = Time.time + shootRate;
+                }
+
+
+                if (Vector3.Distance(transform.position, currentEnemyTarget.transform.position) > attackDistance)
+                {
+                    
+                    GetComponent<Boid>().maxSpeed = originalMaxSpeed;
+                    currentState = BoidStates.Pursue;
+                }
 
                 break;
         }
+    }
+
+
+    void shootRay()
+    {
+
+        GameObject laser = GameObject.Instantiate(m_shotPrefab, muzzle.position, muzzle.rotation) as GameObject;
+        laser.GetComponent<ShotBehavior>().setTarget(currentEnemyTarget.transform.position);
+        GameObject.Destroy(laser, 10f);
+
+
+
+
     }
 
     private void OnDrawGizmos()
