@@ -17,15 +17,30 @@ public class ShotBehavior : MonoBehaviour
 
         if (m_target != null)
         {
-            if (transform.position == m_target)
-            {
-                explode();
-                return;
-            }
+            //if (transform.position == m_target)
+            //{
+            //    explode();
+            //    return;
+            //}
             transform.position = Vector3.MoveTowards(transform.position, m_target, step);
             transform.LookAt(m_target);
         }
 
+    }
+
+
+    private void OnCollisionEnter(Collision other)
+    {
+        other.gameObject.TryGetComponent(out Health healthScript);
+        if (healthScript != null)
+        {
+            healthScript.TakeDamage(5);
+        }
+        else
+        {
+            Debug.Log("Gameobject doesnt have Health script [" + other.gameObject.name + "]");
+        }
+        explode();
     }
 
     public void setTarget(Vector3 target)
@@ -45,5 +60,9 @@ public class ShotBehavior : MonoBehaviour
 
 
     }
+
+
+
+
 
 }
