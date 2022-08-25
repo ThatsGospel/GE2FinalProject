@@ -335,7 +335,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
   damping: 0.01
-  banking: 0.1
+  banking: 0.05
   maxSpeed: 50
   maxForce: 30
 --- !u!114 &3425970260027884165
@@ -375,9 +375,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba5fb6786552a248bc875979e47d971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  health: 0
-  healingRate: 0
+  maxHealth: 100
+  health: 100
+  healingRate: 20
 --- !u!114 &1112063916652177508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,7 +393,7 @@ MonoBehaviour:
   weight: 1
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
-  frequency: 0.3
+  frequency: 0.05
   radius: 10
   theta: 0
   amplitude: 80

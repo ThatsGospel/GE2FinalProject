@@ -162,7 +162,7 @@ MonoBehaviour:
   weight: 1
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
-  frequency: 0.3
+  frequency: 0.05
   radius: 10
   theta: 0
   amplitude: 80
@@ -221,9 +221,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba5fb6786552a248bc875979e47d971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  health: 0
-  healingRate: 0
+  maxHealth: 50
+  health: 50
+  healingRate: 10
 --- !u!65 &5614153695906462190
 BoxCollider:
   m_ObjectHideFlags: 0

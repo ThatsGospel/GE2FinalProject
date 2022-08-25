@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: 1735275432863229799}
   - component: {fileID: 1322074544447325669}
   - component: {fileID: 9070449877289079843}
+  - component: {fileID: 5246955362190968430}
   m_Layer: 0
   m_Name: BattleStar
   m_TagString: BattleStar
@@ -101,7 +102,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
   damping: 0.01
-  banking: 0.1
+  banking: 0.05
   maxSpeed: 50
   maxForce: 30
 --- !u!114 &1735275432863229722
@@ -161,7 +162,7 @@ MonoBehaviour:
   weight: 1
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
-  frequency: 0.3
+  frequency: 0.05
   radius: 10
   theta: 0
   amplitude: 80
@@ -221,6 +222,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.63775635, y: 0.3587036, z: 1.2105103}
   m_Center: {x: -0.014678955, y: -0.022033691, z: -0.10525513}
+--- !u!114 &5246955362190968430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735275432863229798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba5fb6786552a248bc875979e47d971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  health: 50
+  healingRate: 10
 --- !u!1001 &1735275432729598914
 PrefabInstance:
   m_ObjectHideFlags: 0

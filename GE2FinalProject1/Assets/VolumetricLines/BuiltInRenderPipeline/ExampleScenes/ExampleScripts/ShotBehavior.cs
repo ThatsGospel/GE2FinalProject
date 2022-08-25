@@ -34,7 +34,7 @@ public class ShotBehavior : MonoBehaviour
         other.gameObject.TryGetComponent(out Health healthScript);
         if (healthScript != null)
         {
-            healthScript.TakeDamage(5);
+            healthScript.TakeDamage(50);
         }
         else
         {
