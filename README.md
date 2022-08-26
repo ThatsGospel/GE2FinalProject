@@ -1,5 +1,6 @@
 # GE2FinalProject
  
+ Old Repo - https://github.com/ThatsGospel/GE2FinalProject
 
 ## New Plan:
 
@@ -43,3 +44,11 @@ https://youtu.be/hglsdeIsg6c
 Fire Ice Projectile - Explosion - https://assetstore.unity.com/packages/vfx/particles/fire-ice-projectile-explosion-217688#publisher
 Volumetric Lines - https://assetstore.unity.com/packages/tools/particles-effects/volumetric-lines-29160#description
 Deep Space Skybox Pack - https://assetstore.unity.com/packages/2d/textures-materials/deep-space-skybox-pack-11056#description
+Music by https://www.bensound.com/free-music-for-videos
+"Shuttle Typ 15" (https://skfb.ly/onnqF) by riker446 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"USS Enterprise D, Star Trek TNG" (https://skfb.ly/GATQ) by HaughtyGrayAlien is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Viper MK1" (https://skfb.ly/RtBn) by mrpetercharman is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+
+
+
